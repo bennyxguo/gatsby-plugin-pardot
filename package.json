@@ -1,0 +1,33 @@
+{
+  "name": "gatsby-plugin-pardot",
+  "version": "1.0.0",
+  "description": "Gatsby plugin to add Pardot Analytics onto a site",
+  "author": "Benny Guo <bennyxguo6@gmail.com>",
+  "license": "MIT",
+  "respository": {
+    "type": "git",
+    "url": "https://github.com/bennyxguo/gatsby-plugin-pardot"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "babel-preset-gatsby-package": "^2.12.0-next.0",
+    "cross-env": "^7.0.3"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "pardot"
+  ],
+  "peerDependencies": {
+    "gatsby": "^4.0.0-next",
+    "react": "^16.9.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.9.0 || ^17.0.0 || ^18.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir . --ignore \"**/__tests__\"",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore \"**/__tests__\""
+  }
+}
